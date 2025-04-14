@@ -107,7 +107,7 @@
                                     <pattern />
                                     <shadedPattern>org/rascalmpl/</shadedPattern>
                                     <excludes>
-                                        <exclude>org/rascalmpl/tutor/Screenshotter</exclude>
+                                        <exclude>org/rascalmpl/tutor/**</exclude>
                                     </excludes>
                                 </relocation>
                             </relocations>
