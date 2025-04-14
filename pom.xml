@@ -106,8 +106,18 @@
                                 <relocation>   
                                     <pattern />
                                     <shadedPattern>org/rascalmpl/</shadedPattern>
+                                    <includes>
+                                        <include>com/**</include>
+                                        <include>org/**</include>
+                                        <include>io/**</include>
+                                        <include>edu/**</include>
+                                        <include>net/**</include>
+                                        <include>javax/**</include>
+                                        <include>dev/**</include>
+                                    </includes>
                                     <excludes>
-                                        <exclude>org/rascalmpl/tutor/**</exclude>
+                                        <exclude>org/rascalmpl/**</exclude>
+                                        <exclude>io/usethesource/vallang/**</exclude>
                                     </excludes>
                                 </relocation>
                             </relocations>
