@@ -103,22 +103,18 @@
                                 </filter>
                             </filters>
                             <relocations>
-                                <relocation>   
+                                 <relocation>   
                                     <pattern />
                                     <shadedPattern>org/rascalmpl/</shadedPattern>
                                     <includes>
-                                        <include>com/**</include>
-                                        <include>org/**</include>
-                                        <include>io/**</include>
-                                        <include>edu/**</include>
-                                        <include>net/**</include>
-                                        <include>javax/**</include>
-                                        <include>dev/**</include>
+                                        <include>org.apache/**</include>
+                                        <include>net.bytebuddy/**</include>
+                                        <include>io.opentelemetry/**</include>
+                                        <include>com.google/**</include>
+                                        <include>org.checkerframework/**</include>
+                                        <include>javax.annotation/**</include>
+                                        <include>dev.failsafe/**</include>
                                     </includes>
-                                    <excludes>
-                                        <exclude>org/rascalmpl/**</exclude>
-                                        <exclude>io/usethesource/vallang/**</exclude>
-                                    </excludes>
                                 </relocation>
                             </relocations>
                         </configuration>
