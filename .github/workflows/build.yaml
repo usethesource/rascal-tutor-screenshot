@@ -32,7 +32,7 @@ jobs:
           cache: 'maven'
 
       - name: Test with Maven
-        run: mvn -B --update-snapshots compile test
+        run: mvn -B --update-snapshots -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -Dwebdriver.chrome.browser=`which chrome` compile test
 
       - name: Attach artifact
         id: build-artifact
