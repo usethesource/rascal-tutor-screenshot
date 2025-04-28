@@ -30,7 +30,7 @@ public class Screenshotter implements ITutorScreenshotFeature {
     private final ChromeDriverService service;
     private final RemoteWebDriver driver;
 
-    public Screenshotter() throws IOException {
+    public Screenshotter() throws IOException, ClassNotFoundException {
         String driver = DRIVER_BINARY;
         String browser = BROWSER_BINARY;
 
@@ -55,6 +55,7 @@ public class Screenshotter implements ITutorScreenshotFeature {
             this.service = null;
             this.driver = null;
             printInfoMessage();
+            throw new ClassNotFoundException("browser or driver not found for screenshot");
         }
     }
 
